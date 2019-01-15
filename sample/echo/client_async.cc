@@ -59,7 +59,7 @@ int main()
     stub.Echo(cntl, request, response, done);
 
     // Wait call done.
-    while (!callbacked) {
+    while (true) { //!callbacked) {
         usleep(100000);
     }
 
